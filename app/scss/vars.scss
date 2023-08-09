@@ -1,26 +1,31 @@
-$bg: #f6f6f6;
+$main: #1C2023;
+$dark: #30373F;
+$violet: #8856D9;
+$sea: #A9C7C7;
+$grey: #8C96A0;
+$orange: #FF4136;
+$white: #fff;
+$black: #000;
 
-%mulish-200 {
-    font-family: 'Mulish-ExtraLight', sans-serif;
-    font-weight: 200;
-}
 
-%mulish-300 {
-    font-family: 'Mulish-Light', sans-serif;
-    font-weight: 300;
-}
 
-%mulish-400 {
-    font-family: 'Mulish-Regular', sans-serif;
+
+%inter-400 {
+    font-family: 'Inter-Regular', sans-serif;
     font-weight: 400;
 }
 
-%mulish-600 {
-    font-family: 'Mulish-SemiBold', sans-serif;
-    font-weight: 600;
+%rubik-400 {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
 }
 
-%mulish-700 {
-    font-family: 'Mulish-Bold', sans-serif;
+%rubik-500 {
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%rubik-700 {
+    font-family: 'Rubik-Bold', sans-serif;
     font-weight: 700;
 }
