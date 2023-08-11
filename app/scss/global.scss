@@ -47,3 +47,23 @@ ul, li {
     justify-content: center;
 }
 
+h2 {
+    @extend %rubik-600;
+    font-size: 40px;
+    line-height: 47px;
+    color: $white;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .5s;
+    
+}
+
+.violet {
+    color: $violet;
+}
+
+.orange {
+    color: $orange;
+}
+
+

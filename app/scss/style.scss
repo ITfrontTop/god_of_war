@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
+@import 'mixins';
 
 
 .section {
@@ -10,7 +11,7 @@
         position: relative;
         max-width: 1920px;
         margin: 0 auto;
-        min-height: 70vh;
+        min-height: 700px;
 
     }
 
@@ -32,6 +33,9 @@
 
     &::before {
         background: url(../images/bg.png) no-repeat center/cover;
+    }
+    &-dual {
+        margin-top: 50px;
     }
 }
 
@@ -208,7 +212,165 @@
         h1 {
             @extend %rubik-600;
             font-size: 100px;
+            line-height: 100px;
         }
+    }
+    
+    &-subtitle {
+        font-size: 18px;
+        line-height: 27px;
+        color: $sea;
+        margin-top: 26px;
+    }
+
+    &-button {
+        @include button;
+        @include hoverViolet;
+        margin-top: 36px;
+
+    }
+}
+
+.editions {
+    &-list {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        column-gap: 16px;
+        justify-content: center;
+
+    }
+
+    &-item {
+        background: linear-gradient(180deg, #141615 0%, #1C2023 100%);
+        border-radius: 6px;
+        padding: 17px;
+        transition: transform .25s ease-in-out;
+        transform: translateX(0);
+
+        &__img {
+            border-radius: 6px;
+            overflow: hidden;
+            width: 100%;
+            height: 172px;
+            @include bg;
+        }
+
+        &__title {
+            margin-top: 20px;
+            @extend %rubik-700;
+            line-height: 19px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            color: $sea;
+            line-height: 19px;
+            @extend %rubik-500;
+            text-align: center;
+            margin: 10px 0 32px 0;
+        }
+
+        &__description {
+            color: $grey;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+
+        }
+
+        &__price {
+            @extend %rubik-700;
+            font-size: 19px;
+            line-height: 23px;
+            color: $white;
+            margin: 6px 0 14px 0;
+            text-align: right;
+        }
+
+        &__btn {
+            @include button;
+            @include hoverViolet;
+            padding: 8px 18px;
+            font-size: 13px;
+            line-height: 15px;
+            margin-left: auto;
+        }
+    }
+}
+
+.dual {
+    column-gap: 5%;
+    margin-top: 20px;
+    transition: column-gap .5s;
+
+    &-description {
+        max-width: 410px;
+
+        p {
+            color: $sea;
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 22px;
+            span {
+                @extend %rubik-700;
+            }
+        }
+
+        &__info {
+            margin-top: 19px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__price {
+            @extend %rubik-700;
+            font-size: 30px;
+            line-height: 36px;
+
+        }
+
+        &__button {
+            @include button($orange);
+            @include hoverOrange;
+            padding: 14px 19px;
+            @extend %rubik-500;
+        }
+    }
+    
+    &-img {
+        max-width: 50%;
+        position: relative;
+
+        img {
+            max-width: fit-content;
+            animation: gravitation 1.5s linear infinite alternate;
+        }
+
+        &::before {
+            content: '';
+            width: 194px;
+            height: 119px;
+            background: rgba(79, 96, 152, 0.8);
+            filter: blur(75px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+    }
+}
+
+@keyframes gravitation {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
 
@@ -223,3 +385,4 @@
         transform: translateX(0px);
     }
 }
+
