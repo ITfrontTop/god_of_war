@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'fonts';
+@import 'libs';
 @import 'vars';
 @import 'global';
 @import 'mixins';
@@ -178,7 +179,7 @@
                     ul {
                         opacity: 1;
                         transform: translateX(0);
-                        transition: opacity .2s transform .25s;
+                        transition: opacity .2s, transform .25s;
 
                     }
                 }
