@@ -11,7 +11,7 @@
 
 <body>
 
-    <section class="section section-main">
+    <section class="section hidden section-main">
         <div class="container">
             <header class="header flex">
                 <div class="header-menu flex">
@@ -22,32 +22,32 @@
                     <nav class="header-menu__list">
                         <ul class="flex flex-center">
                             <li>
-                                <a class="header-menu__link menu-link" href="#editions">
+                                <a data-text="editions" class="header-menu__link menu-link" href="#editions">
                                     editions
                                 </a>
                             </li>
                             <li>
-                                <a class="header-menu__link menu-link" href="#controller">
+                                <a data-text="controller" class="header-menu__link menu-link" href="#controller">
                                     controller
                                 </a>
                             </li>
                             <li>
-                                <a class="header-menu__link menu-link" href="#about">
+                                <a data-text="about" class="header-menu__link menu-link" href="#about">
                                     About
                                 </a>
                             </li>
                             <li>
-                                <a class="header-menu__link menu-link" href="#explore">
+                                <a data-text="explore" class="header-menu__link menu-link" href="#explore">
                                     Explore
                                 </a>
                             </li>
                             <li>
-                                <a class="header-menu__link menu-link" href="#news">
+                                <a data-text="news" class="header-menu__link menu-link" href="#news">
                                     news
                                 </a>
                             </li>
                             <li>
-                                <a class="header-menu__link menu-link" href="#faq">
+                                <a data-text="faq" class="header-menu__link menu-link" href="#faq">
                                     FAQ
                                 </a>
                             </li>
@@ -71,10 +71,10 @@
                                     </svg>
 
                                     <div class="header-menu__languages">
-                                        <div class="header-menu__language">
+                                        <div class="header-menu__language language" data-lang="ru">
                                             Русский
                                         </div>
-                                        <div class="header-menu__language">
+                                        <div class="header-menu__language language" data-lang="en">
                                             English
                                         </div>
                                     </div>
@@ -116,17 +116,17 @@
                         that spans three summers, is drawing to a close which will begin the prophesied Ragnarök.
                     </div>
 
-                    <div class="description-button">buy NOW</div>
+                    <div class="description-button buy-button" data-value="0">buy NOW</div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="section section-editions" id="editions">
+    <section class="section hidden section-editions" id="editions">
         <div class="container">
             <div class="editions">
-                <h2>Editions</h2>
+                <h2 data-text="editions">Editions</h2>
 
                 <div class="editions-list">
                     <div class="editions-item">
@@ -150,7 +150,7 @@
                             19.99$
                         </div>
 
-                        <div class="editions-item__btn button-buy">buy now</div>
+                        <div class="editions-item__btn buy-button" data-value="1">buy now</div>
                     </div>
 
                     <div class="editions-item">
@@ -174,7 +174,7 @@
                             18.99$
                         </div>
 
-                        <div class="editions-item__btn button-buy">buy now</div>
+                        <div class="editions-item__btn buy-button" data-value="2">buy now</div>
                     </div>
 
                     <div class="editions-item">
@@ -198,7 +198,7 @@
                             29.99$
                         </div>
 
-                        <div class="editions-item__btn button-buy">buy now</div>
+                        <div class="editions-item__btn buy-button">buy now</div>
                     </div>
 
                 </div>
@@ -206,7 +206,7 @@
         </div>
     </section>
 
-    <section class="section section-dual" id="controller">
+    <section class="section hidden section-dual" id="controller">
         <div class="container">
             <h2>DualSense</h2>
 
@@ -238,7 +238,7 @@
         </div>
     </section>
 
-    <section class="section section-about" id="about">
+    <section class="section hidden section-about" id="about">
         <h2>About Game</h2>
 
         <div class="video">
@@ -256,7 +256,7 @@
         </div>
     </section>
 
-    <section class="section section-explore" id="explore">
+    <section class="section hidden section-explore" id="explore">
         <div class="container">
             <h2>Explore the God of War series</h2>
 
@@ -312,7 +312,7 @@
                                 <li><span class="violet">DEDICATED VIDEO RAM</span>: 8 GB</li>
                             </ul>
 
-                            <div class="explore-button">buy now</div>
+                            <div class="explore-button buy-button">buy now</div>
                         </div>
                     </div>
                 </div>
@@ -363,7 +363,7 @@
                                 <li><span class="violet">Display languages</span>: English</li>
                             </ul>
 
-                            <div class="explore-button">buy now</div>
+                            <div class="explore-button buy-button">buy now</div>
                         </div>
                     </div>
                 </div>
@@ -371,7 +371,7 @@
         </div>
     </section>
 
-    <section class="section section-news" id="news">
+    <section class="section hidden section-news" id="news">
         <h2>News</h2>
 
         <div class="news swiper flex-center flex">
@@ -433,7 +433,10 @@
 
                         <div class="news-item__text flex">
                             <p>
-                                Digital distribution enthusiasts need to get ready for tons of downloads. The second adventure of Kratos and Atreus in the High North from the premiere will occupy nearly 120GB - when deciding to buy a title from PlayStation Store, it is worth planning your download wisely to start the game on the day of the premiere.
+                                Digital distribution enthusiasts need to get ready for tons of downloads. The second
+                                adventure of Kratos and Atreus in the High North from the premiere will occupy nearly
+                                120GB - when deciding to buy a title from PlayStation Store, it is worth planning your
+                                download wisely to start the game on the day of the premiere.
                             </p>
 
                             <a href="#" class="news-item__button">
@@ -463,7 +466,11 @@
 
                         <div class="news-item__text flex">
                             <p>
-                                Familiar characters will return to the game, but also completely new ones. We are talking here about Thor, presented as a brutal and mentally unstable performer of "dirty work" in the services of Odin , as well as the ruler of the gods himself, who left his mark on the events of the previous installment, although he did not appear in it personally.
+                                Familiar characters will return to the game, but also completely new ones. We are
+                                talking here about Thor, presented as a brutal and mentally unstable performer of "dirty
+                                work" in the services of Odin , as well as the ruler of the gods himself, who left his
+                                mark on the events of the previous installment, although he did not appear in it
+                                personally.
                             </p>
 
                             <a href="#" class="news-item__button">
@@ -512,12 +519,14 @@
                 <div class="swiper-button-prev swiper-button flex flex-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                         <g clip-path="url(#clip0_11_145)">
-                          <path d="M11.9221 0.579625L4.6494 7.8166C4.51301 7.95226 4.4364 8.13637 4.4364 8.32828C4.4364 8.52025 4.51306 8.70431 4.64944 8.84002L11.9222 16.0766C12.2062 16.3592 12.6667 16.3592 12.9507 16.0766C13.2347 15.794 13.2347 15.3358 12.9507 15.0532L6.19223 8.32828L12.9507 1.60305C13.0927 1.46174 13.1637 1.27653 13.1637 1.09131C13.1637 0.906099 13.0927 0.720886 12.9506 0.579576C12.6666 0.297005 12.2061 0.297005 11.9221 0.579625Z" fill="white"/>
+                            <path
+                                d="M11.9221 0.579625L4.6494 7.8166C4.51301 7.95226 4.4364 8.13637 4.4364 8.32828C4.4364 8.52025 4.51306 8.70431 4.64944 8.84002L11.9222 16.0766C12.2062 16.3592 12.6667 16.3592 12.9507 16.0766C13.2347 15.794 13.2347 15.3358 12.9507 15.0532L6.19223 8.32828L12.9507 1.60305C13.0927 1.46174 13.1637 1.27653 13.1637 1.09131C13.1637 0.906099 13.0927 0.720886 12.9506 0.579576C12.6666 0.297005 12.2061 0.297005 11.9221 0.579625Z"
+                                fill="white" />
                         </g>
                         <defs>
-                          <clipPath id="clip0_11_145">
-                            <rect width="15.9209" height="16" fill="white" transform="matrix(0 -1 1 0 0 16.2886)"/>
-                          </clipPath>
+                            <clipPath id="clip0_11_145">
+                                <rect width="15.9209" height="16" fill="white" transform="matrix(0 -1 1 0 0 16.2886)" />
+                            </clipPath>
                         </defs>
                     </svg>
                 </div>
@@ -525,12 +534,14 @@
                 <div class="swiper-button-next swiper-button flex flex-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                         <g clip-path="url(#clip0_11_145)">
-                          <path d="M11.9221 0.579625L4.6494 7.8166C4.51301 7.95226 4.4364 8.13637 4.4364 8.32828C4.4364 8.52025 4.51306 8.70431 4.64944 8.84002L11.9222 16.0766C12.2062 16.3592 12.6667 16.3592 12.9507 16.0766C13.2347 15.794 13.2347 15.3358 12.9507 15.0532L6.19223 8.32828L12.9507 1.60305C13.0927 1.46174 13.1637 1.27653 13.1637 1.09131C13.1637 0.906099 13.0927 0.720886 12.9506 0.579576C12.6666 0.297005 12.2061 0.297005 11.9221 0.579625Z" fill="white"/>
+                            <path
+                                d="M11.9221 0.579625L4.6494 7.8166C4.51301 7.95226 4.4364 8.13637 4.4364 8.32828C4.4364 8.52025 4.51306 8.70431 4.64944 8.84002L11.9222 16.0766C12.2062 16.3592 12.6667 16.3592 12.9507 16.0766C13.2347 15.794 13.2347 15.3358 12.9507 15.0532L6.19223 8.32828L12.9507 1.60305C13.0927 1.46174 13.1637 1.27653 13.1637 1.09131C13.1637 0.906099 13.0927 0.720886 12.9506 0.579576C12.6666 0.297005 12.2061 0.297005 11.9221 0.579625Z"
+                                fill="white" />
                         </g>
                         <defs>
-                          <clipPath id="clip0_11_145">
-                            <rect width="15.9209" height="16" fill="white" transform="matrix(0 -1 1 0 0 16.2886)"/>
-                          </clipPath>
+                            <clipPath id="clip0_11_145">
+                                <rect width="15.9209" height="16" fill="white" transform="matrix(0 -1 1 0 0 16.2886)" />
+                            </clipPath>
                         </defs>
                     </svg>
                 </div>
@@ -538,7 +549,7 @@
         </div>
     </section>
 
-    <section class="section section-faq" id="faq">
+    <section class="section hidden section-faq" id="faq">
         <div class="container">
             <h2>FAQ</h2>
 
@@ -551,9 +562,10 @@
 
                     <div class="faq-item__content">
                         <p>
-                            God of War Ragnarök will release on 
-                            <span>November 9, 2022</span>. 
-                            To get the latest updates on release timing, make sure you follow Santa Monica Studio on Twitter, Instagram and Facebook! 
+                            God of War Ragnarök will release on
+                            <span>November 9, 2022</span>.
+                            To get the latest updates on release timing, make sure you follow Santa Monica Studio on
+                            Twitter, Instagram and Facebook!
                         </p>
                     </div>
                 </div>
@@ -579,34 +591,32 @@
             <div class="footer-top flex">
                 <ul class="footer-menu flex flex-center">
                     <li>
-                        <li>
-                            <a class="menu-link" href="#editions">editions</a>
-                        </li>
-                        <li>
-                            <a class="menu-link" href="#controller">
-                                controller
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu-link" href="#about">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu-link" href="#explore">
-                                Explore
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu-link" href="#news">
-                                news
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu-link" href="#faq">
-                                FAQ
-                            </a>
-                        </li>
+                        <a class="menu-link" href="#editions">editions</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="#controller">
+                            controller
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="#explore">
+                            Explore
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="#news">
+                            news
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="#faq">
+                            FAQ
+                        </a>
                     </li>
                 </ul>
 
@@ -627,7 +637,9 @@
             </div>
 
             <div class="footer-info">
-                Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.
+                Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage
+                Terms plus any specific additional conditions applying to this product. If you do not wish to accept
+                these terms, do not download this product. See Terms of Service for more important information.
             </div>
 
             <div class="footer-icon">
@@ -638,6 +650,64 @@
             <div class="footer-rights">Developed by <a href="">ITfrontTop</a>. All rights reserved</div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-title">GOD OF WAR RAGNAROK</div>
+            <div class="modal-verion"></div>
+
+            <form class="form">
+                <div class="form-group full">
+                    <label for="card">Credit card:</label>
+                    <input type="text" required placeholder="0000 0000 0000 0000" id="card">
+                </div>
+
+                <div class="form-group">
+                    <label for="expire">expire:</label>
+                    <input type="text" required placeholder="mm/yy" id="expire">
+                </div>
+
+                <div class="form-group">
+                    <label for="ccv">CCV:</label>
+                    <input type="text" required placeholder="***" id="ccv">
+                </div>
+
+                <div class="form-group full">
+                    <label for="instant">instant:</label>
+                    <input type="text" required placeholder="John Doe" id="instant">
+                </div>
+
+                <div class="form-checkbox flex felx-center">
+                    <input type="checkbox" name="agreement" id="agreement" required>
+                    <span class="check"></span>
+                    <label for="agreement">
+                        I agree with the <span class="red">rules</span> of the site
+                    </label>
+                </div>
+
+                <div class="modal-description">
+                    Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.
+                </div>
+
+                <div class="modal-total flex flex-center">
+                    <div class="modal-total__text">
+                        YOUR TOTAL SUMMA:
+                    </div>
+                    <div class="modal-total__price">
+                        19.99$
+                    </div>
+                </div>
+
+                <button type="submit" class="modal-submit buy-button">
+                    buy NOW
+                </button>
+            </form>
+
+            <div class="modal-close">x</div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
 
     <script src="js/main.min.js"></script>
 </body>
